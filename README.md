@@ -1,3 +1,5 @@
+Project board https://hissing-carriage-e48.notion.site/1398458e8309808d92d5f7e51688b364?v=eb7bc131159c410880c624ff834b6099
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
