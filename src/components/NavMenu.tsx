@@ -1,22 +1,35 @@
-import { ReactComponent as Brand } from '../../assets/icons/family-circles-logo.svg'
+import { NavLink } from 'react-router-dom'
+//import { ReactComponent as Icon} from '../../assets/icons/family-circles-logo.svg'
+import './navmenu.css'
 
-const Navbar = () => {
+//https://www.codevertiser.com/reactjs-responsive-navbar
+
+const NavMenu = () => {
     return (
-        <nav>
-            <div>
-                <Brand />
-            </div>
-            <div>
-                <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+        <nav className="navbar">
+            <div className="container">
+                <div className="nav-elements">
+                    <ul>
+                        <li>
+                            <NavLink to="/">Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/blog">Blog</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/projects">Projects</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/about">About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact">Contact</NavLink>
+                        </li>
+                    </ul>
+                </div>y
             </div>
         </nav>
     )
 }
 
-export default Navbar
+export default NavMenu

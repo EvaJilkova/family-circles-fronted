@@ -1,6 +1,7 @@
 import familyCirclesLogo from './assets/familyCircles.png'
 import './App.css'
-import MyMenu from "./components/MyMenu.tsx";
+import {BrowserRouter} from "react-router";
+import NavMenu from "./components/NavMenu.tsx";
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
         </a>
       </div>
       <h1>Family Circles</h1>
-        <MyMenu></MyMenu>
+
+        <BrowserRouter>
+            <NavMenu />
+        </BrowserRouter>
     </>
   )
 }
